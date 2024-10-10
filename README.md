@@ -6,7 +6,6 @@
 ## Road Map
 
 - [ ] add ability to use custom global configuration ⏳
-- [ ] add documentation ⏳
 - [ ] add more units and unit-types ⏳
 
 ## Installation
