@@ -39,6 +39,7 @@ export const UNITS_CONVERSION_MAP: UnitsConversionMap = {
       km: 1000 * 1000
     }
   },
+  // memory is counted as usual computer memory (eg 1mb -> 1024kb)
   memory: {
     units: MEMORY_UNITS,
     conversions: {

@@ -22,6 +22,16 @@ or yarn:
 yarn add unit-kit
 ```
 
+## Supported units ⏳
+
+```
+export const TIME_UNITS = ["ms", "s", "min", "h", "d"] as const;
+
+export const DISTANCE_UNITS = ["mm", "cm", "inch", "dm", "m", "km"] as const;
+
+export const MEMORY_UNITS = ["b", "kb", "mb", "gb", "tb", "pb"] as const;
+```
+
 ## Usage
 
 UnitKit exports two main functions: `parse` and `safeParse`. These functions handle parsing input strings into unit values and converting them to the desired unit.
@@ -89,7 +99,7 @@ type ConversionResult = {
   unit: string;
 };
 
-console.log(result.formattedValue); // Output: '0.49'
+console.log(result.formattedValue); // Output: '0.5'
 ```
 
 ## API

@@ -5,7 +5,7 @@ import { UNITS_CONVERSION_MAP, defaultConfiguration } from "./constants";
 const REGEXP = /^(\d+(\.\d+)?)(\s?)([a-zA-Z]+)$/;
 
 const parseRawValue = (input: string): ParsedRawValue => {
-  const match = input.trim().match(REGEXP);
+  const match = input.trim().toLowerCase().match(REGEXP);
 
   if (!match) {
     throw new Error(`unknown input format ${input}`);
